@@ -1,0 +1,29 @@
+# PostgreSQL
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  encoding: unicode
+
+# Local configs (using docker)
+local: &local
+  <<: *default
+  user: postgres
+  host: db
+  port: 5432
+
+# Development database
+development:
+  <<: *local
+  database: miic_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *local
+  database: miic_test
+
+production:
+  <<: *default
+  database: miic_production

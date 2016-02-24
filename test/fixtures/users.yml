@@ -1,0 +1,24 @@
+# Admin user
+admin:
+  name: Super Admin user
+  nickname: admin
+
+# Brian Ford (https://twitter.com/briantford)
+brian:
+  name: Brian Ford
+  nickname: brandtford
+
+# Tom Dale (https://twitter.com/tomdale)
+tom:
+  name: Tome Dale
+  nickname: tomdale
+
+# Jeff Atwood (http://twitter.com/codinghorror)
+jeff:
+  name: Jeff Atwood
+  nickname: codinghorror
+
+# Aaron Petterson (https://twitter.com/tenderlove)
+aaron:
+  name: Aaron Petterson
+  nickname: tenderlove

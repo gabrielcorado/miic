@@ -1,0 +1,19 @@
+{
+  "name": "miic",
+  "version": "0.0.0",
+  "description": "A microblog like Twitter.",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Corado",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "vueify": "^8.0.0"
+  },
+  "license": "ISC"
+}

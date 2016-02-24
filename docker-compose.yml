@@ -1,0 +1,22 @@
+# Redis
+redis:
+  image: redis
+
+# Database
+db:
+  image: postgres
+
+# Main Application
+web:
+  build: .
+  volumes:
+    - ./:/app
+  command: rails s -b 0.0.0.0
+  ports:
+    - 3000:3000
+  links:
+    - redis
+    - db
+  environment:
+    RAILS_ENV: development
+    REDIS_URL: tcp://redis:6379
